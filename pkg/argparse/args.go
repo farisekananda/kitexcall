@@ -107,6 +107,9 @@ func (a *Argument) buildFlags() *flag.FlagSet {
 
 	f.BoolVar(&a.version, "version", false, "Show the version of kitexcall.")
 
+	f.StringVar(&a.ConnectTimeout, "con-timeout", "", "Specify the connect timeout. (e.g. 1s, 1m, 1h)")
+	f.StringVar(&a.RPCTimeout, "rpc-timeout", "", "Specify the rpc timeout. (e.g. 1s, 1m, 1h)")
+
 	return f
 }
 
@@ -279,6 +282,8 @@ func (a *Argument) BuildConfig() *config.Config {
 		MetaPersistent: a.MetaPersistent,
 		MetaBackward:   a.MetaBackward,
 		BizError:       a.BizError,
+		ConnectTimeout: a.ConnectTimeout,
+		RPCTimeout:     a.RPCTimeout,
 	}
 }
 

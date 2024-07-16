@@ -19,6 +19,7 @@ package client
 import (
 	"context"
 	"os"
+	"time"
 
 	"github.com/bytedance/gopkg/cloud/metainfo"
 	dproto "github.com/cloudwego/dynamicgo/proto"
@@ -138,6 +139,18 @@ func (c *GenericClientBase) BuildClientOptions() error {
 				return ctx, nil
 			}),
 		)))
+	}
+
+	if c.Conf.RPCTimeout != "" {
+		if rpcTimeout, err := time.ParseDuration(c.Conf.RPCTimeout); err == nil {
+			opts = append(opts, client.WithRPCTimeout(rpcTimeout))
+		}
+	}
+
+	if c.Conf.ConnectTimeout != "" {
+		if connectTimeout, err := time.ParseDuration(c.Conf.ConnectTimeout); err == nil {
+			opts = append(opts, client.WithConnectTimeout(connectTimeout))
+		}
 	}
 
 	c.ClientOpts = opts

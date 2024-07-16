@@ -46,6 +46,8 @@ type Config struct {
 	MetaPersistent map[string]string
 	MetaBackward   bool
 	BizError       bool
+	ConnectTimeout string
+	RPCTimeout     string
 }
 
 type ConfigBuilder interface {
