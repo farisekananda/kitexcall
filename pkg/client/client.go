@@ -18,8 +18,8 @@ package client
 
 import (
 	"github.com/cloudwego/kitex/pkg/kerrors"
-	"github.com/kitex-contrib/kitexcall/pkg/config"
-	"github.com/kitex-contrib/kitexcall/pkg/errors"
+	"github.com/farisekananda/kitexcall/pkg/config"
+	"github.com/farisekananda/kitexcall/pkg/errors"
 )
 
 type Client interface {

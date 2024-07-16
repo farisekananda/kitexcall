@@ -33,8 +33,8 @@ import (
 	"github.com/cloudwego/kitex/pkg/transmeta"
 	"github.com/cloudwego/kitex/server"
 	"github.com/cloudwego/kitex/server/genericserver"
-	"github.com/kitex-contrib/kitexcall/pkg/client"
-	"github.com/kitex-contrib/kitexcall/pkg/config"
+	"github.com/farisekananda/kitexcall/pkg/client"
+	"github.com/farisekananda/kitexcall/pkg/config"
 )
 
 var (

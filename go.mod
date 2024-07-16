@@ -1,4 +1,4 @@
-module github.com/kitex-contrib/kitexcall
+module github.com/farisekananda/kitexcall
 
 go 1.21
 

@@ -17,7 +17,7 @@ Kitexcall is a command-line tool for sending JSON general requests using kitex, 
 ## Installation
 
 ```bash
-go install github.com/kitex-contrib/kitexcall@latest
+go install github.com/farisekananda/kitexcall@latest
 ```
 
 ## Usage
@@ -119,6 +119,8 @@ Output:
 - `-meta-persistent`: Specifies persistent metadata passed to the server. Multiple can be specified, in the format key=value.
 - `-meta-backward`: Enables receiving backward metadata (Backward) returned by the server.
 - `-verbose` or `-v`: Enables verbose mode for more detailed output information.
+- `-rpc-timeout` or `-rt`: Specify RPC Timeout in durations, default is 1s.
+- `-con-timeout` or `-ct`: Specify Connection Timeout in durations, default is 50ms.
 
 ### Detailed Description
 

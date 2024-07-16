@@ -32,9 +32,9 @@ import (
 	remote_transmeta "github.com/cloudwego/kitex/pkg/remote/transmeta"
 	"github.com/cloudwego/kitex/pkg/transmeta"
 	"github.com/cloudwego/kitex/transport"
-	"github.com/kitex-contrib/kitexcall/pkg/config"
-	"github.com/kitex-contrib/kitexcall/pkg/errors"
-	"github.com/kitex-contrib/kitexcall/pkg/log"
+	"github.com/farisekananda/kitexcall/pkg/config"
+	"github.com/farisekananda/kitexcall/pkg/errors"
+	"github.com/farisekananda/kitexcall/pkg/log"
 )
 
 type GenericClientBase struct {

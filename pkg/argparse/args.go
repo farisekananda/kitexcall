@@ -22,10 +22,10 @@ import (
 	"os"
 	"strings"
 
-	"github.com/kitex-contrib/kitexcall/pkg/config"
-	"github.com/kitex-contrib/kitexcall/pkg/errors"
-	"github.com/kitex-contrib/kitexcall/pkg/log"
-	"github.com/kitex-contrib/kitexcall/pkg/versions"
+	"github.com/farisekananda/kitexcall/pkg/config"
+	"github.com/farisekananda/kitexcall/pkg/errors"
+	"github.com/farisekananda/kitexcall/pkg/log"
+	"github.com/farisekananda/kitexcall/pkg/versions"
 )
 
 type Argument struct {
@@ -108,7 +108,9 @@ func (a *Argument) buildFlags() *flag.FlagSet {
 	f.BoolVar(&a.version, "version", false, "Show the version of kitexcall.")
 
 	f.StringVar(&a.ConnectTimeout, "con-timeout", "", "Specify the connect timeout. (e.g. 1s, 1m, 1h)")
+	f.StringVar(&a.ConnectTimeout, "ct", "", "Specify the connect timeout. (e.g. 1s, 1m, 1h)")
 	f.StringVar(&a.RPCTimeout, "rpc-timeout", "", "Specify the rpc timeout. (e.g. 1s, 1m, 1h)")
+	f.StringVar(&a.RPCTimeout, "rt", "", "Specify the rpc timeout. (e.g. 1s, 1m, 1h)")
 
 	return f
 }

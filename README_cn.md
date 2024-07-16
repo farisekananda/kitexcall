@@ -17,7 +17,7 @@ kitexcall 是使用 kitex 发送 json 通用请求的命令行工具，像是 cu
 ## **Installation**
 
 ```bash
-go install github.com/kitex-contrib/kitexcall@latest
+go install github.com/farisekananda/kitexcall@latest
 ```
 
 ## **Usage**

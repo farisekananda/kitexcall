@@ -19,9 +19,9 @@ package main
 import (
 	"os"
 
-	"github.com/kitex-contrib/kitexcall/pkg/argparse"
-	"github.com/kitex-contrib/kitexcall/pkg/client"
-	"github.com/kitex-contrib/kitexcall/pkg/log"
+	"github.com/farisekananda/kitexcall/pkg/argparse"
+	"github.com/farisekananda/kitexcall/pkg/client"
+	"github.com/farisekananda/kitexcall/pkg/log"
 )
 
 func main() {
